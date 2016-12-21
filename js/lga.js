@@ -1,8 +1,9 @@
+var theme="LGA";
 define(function(require) {
 	
 	var Adapt = require('coreJS/adapt');
 	var Backbone = require('backbone');
-	var ThemeBlock = require('theme/adapt-theme-lga/js/theme-block');
+	var ThemeBlock = require('theme/adapt-theme-odi/js/theme-block');
 	var emailPresent = false;
 
 	// Block View

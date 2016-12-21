@@ -13,20 +13,21 @@
 
 @default-width:1024px;
 
-@primary-color:#92278f;
-@secondary-color:#6a737b;
-@tertiary-color:#004961;
+@odi-color-one:#92278f; // LGA Purple
+@odi-color-two:#6a737b; // LGA Grey
+@odi-color-three:#004961; // LGA Dark Blue
+@odi-color-four:#00bce4; // LGA Light Blue
+@odi-color-five:#009b7b; // LGA Sea Green
+@odi-color-six:#5a4099; // LGA Dark Purple    
+@odi-color-seven:#c1d82f; // LGA Light Green
+@odi-color-eight:#ffe14f; // LGA Primrose
+@odi-color-nine:#E6007C ;// ODI magenta
+@odi-color-ten:#f3901d; // LGA Orange
 
-@odi-color-one:#92278f; // Purple
-@odi-color-two:#6a737b; //Grey
-@odi-color-three:#004961; // Dark Blue
-@odi-color-four:#00bce4; //Light Blue
-@odi-color-five:#009b7b; //Sea Green
-@odi-color-six:#5a4099; //Dark Purple    
-@odi-color-seven:#c1d82f; //Light Green
-@odi-color-eight:#ffe14f; //Primrose
-@odi-color-nine:#E6007C ;//magenta
-@odi-color-ten:#f3901d; //Orange
+@primary-color:@odi-color-one;
+@secondary-color:@odi-color-two;
+@tertiary-color:@odi-color-three;
+
 @menu-header-background-color: @odi-color-five;
 
 // Main Colors
@@ -69,7 +70,7 @@
 @title-color-inverted: @primary-color-inverted;
 
 // Buttons
-@button-color: @odi-color-one;
+@button-color: @odi-color-five;
 @button-color-inverted: @primary-color-inverted;
 @button-color-hover: darken(@button-color, 40%);
 @button-color-disabled: @disabled-color;

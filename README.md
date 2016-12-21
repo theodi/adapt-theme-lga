@@ -1,4 +1,4 @@
-# adapt-theme-odi
+# adapt-theme-lga
 
 This theme is adapted from the adapt vanilla theme
 

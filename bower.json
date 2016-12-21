@@ -1,14 +1,14 @@
 {
     "name": "adapt-theme-lga",
-    "repository": "git@github.com:theodi/adapt-theme-lga.git",
+    "repository": "git@github.com:davetaz/adapt-theme-lga.git",
     "framework": "^2.0.0",
-    "version": "0.3.1",
-    "homepage": "https://github.com/theodi/adapt-theme-lga/",
-    "issues": "https://github.com/theodi/adapt-theme-lga/issues",
-    "displayName": "Local Government Association",
+    "version": "0.2.0",
+    "homepage": "https://github.com/davetaz/adapt-theme-lga",
+    "issues": "https://github.com/davetaz/adapt-theme-lga/issues",
+    "displayName": "LGA",
     "theme": "LGA",
     "description": "A custom theme for LGA modules",
-    "main": "js/odi.js",
+    "main": "js/lga.js",
     "keywords": [
         "adapt-plugin",
         "adapt-theme"
