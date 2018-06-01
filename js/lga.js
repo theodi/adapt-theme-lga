@@ -61,7 +61,6 @@ define(function(require) {
 	var click_bind = false;
 
 	function showMessage(phraseId) {
-		console.log("In show message");
 		
 		var alertObject = {
             title: "Save your progress, earn rewards...",
@@ -78,6 +77,11 @@ define(function(require) {
 	}
 
 	function addListeners() {
+		$(document).keypress(function(e) {
+		    if (e.which == 115) {
+		        $(".save-section-outer").fadeIn();
+			}
+		});		
 		if (!click_bind) {
 			$('.save-section-outer').click(function() {
 				$('#cloud-status').slideToggle();
@@ -104,7 +108,7 @@ define(function(require) {
 
 	function checkWelcome(user) {
 		if (!user.email && !localStorage.getItem("ODI_Welcome_Done")) {
-			showMessage('enter_email');
+			//showMessage('enter_email');
 			localStorage.setItem("ODI_Welcome_Done",true);
 		}
 	}
@@ -153,6 +157,9 @@ function callTrigger(type) {
 	}
 	if (type == "aboutPage:showAboutPage") {
 		Adapt.trigger('aboutPage:showAboutPage');
+	}
+	if (type == "licencePage:showLicencePage") {
+		Adapt.trigger('licencePage:showLicencePage');
 	}
 	if (type == "credits:showCredits") {
 		Adapt.trigger('credits:showCredits');
